@@ -21,14 +21,26 @@
 title: Aiyang Lin
 email: aiyang.lin@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Aiyang Lin is a PhD candidate in the Biochemistry, Microbiology and
-  Immunology department at the University of Saskatchewan.
+  Microbiology PhD candidate
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://aiyanglin.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: aiyanglin
 
 # Build settings
-theme: jekyll-theme-merlot
+remote_theme: daviddarnes/alembic@main
+plugins:
+- jekyll-remote-theme
+- jekyll-seo-tag
+
+navigation_header:
+- title: Home
+  url: /
+- title: Data
+  url: /data/
+
+navigation_footer:
+- title: Home
+  url: /
 
 # Exclude from processing.
 # The following items will not be processed, by default.
